@@ -1,0 +1,30 @@
+---
+title: "Data cookbook"
+author: "Hope Meeme"
+date: "4/16/2022"
+output: html_document
+---
+
+# Data exploration
+
+## Data description
+
+```{r, echo = FALSE}
+titanic.train = read.csv("train.csv")
+titanic.test = read.csv("test.csv")
+```
+
+The data we are exploring is the titanic dataset, an iconic and classic dataset in the field of Machine Learning. We chose to work on the original version as published in kaggle (https://www.kaggle.com/c/titanic/data). The dataset contains 12 features with 891 observations. The variables are presented below:
+
+* PassengerId: an integer feature which is a unique Id assigned to each passenger.
+* Survived: a binary variable with two outcomes (1 or 0). It describes the outcome of the tragedy, weather the passenger survived or not.
+* Pclass: an integer feature that informs in which class of the trip the passenger was travelling. There were 3 classes (1, 2 or 3), with 1 being the best class and 3 the lowest.
+* Name: a character feature which is simply the name of the passenger.
+* Sex: The gender of the passenger with two possible values (male or female).
+* Age: An integer feature which informs the age of the passenger.
+* SibSp: an integer feature telling how many siblings/spouse were onboard the ship.
+* Parch: An integer variable telling how many parents/children were onboard the ship.
+* Ticket: a character feature which is simply the ticket number.
+* Fare: A numeric feature which is the passenger fare, or the fee paid by the passenger for the ticket.
+* Cabin; A character feature which is the cabin number.
+* Embarked: a character feature with three possible values referring to the port of embarkation. The values are C (Cherbourg), Q (Queenstown) and S (Southampton).
